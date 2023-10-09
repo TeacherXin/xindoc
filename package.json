@@ -1,0 +1,17 @@
+{
+  "name": "hxindoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "./bin/cli.js",
+  "scripts": {
+    "test": "node ./bin/cli.js"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

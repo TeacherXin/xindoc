@@ -1,0 +1,133 @@
+{
+	"state": {
+		"ownFuncList": [
+			"firstName: 姓",
+			"lastName: 名"
+		],
+		"yydsFuncList": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
+		"funcbody": "{\r\n    //姓\r\n    firstName: '',\r\n    //名\r\n    lastName: ''\r\n  }\r",
+		"level": 0,
+		"commentLines": [],
+		"params": [],
+		"otherFuncList": {}
+	},
+	"parentName": {
+		"ownFuncList": [],
+		"yydsFuncList": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
+		"funcbody": "'lixiaolong'\r",
+		"level": 0,
+		"commentLines": [
+			"父亲的名字"
+		],
+		"params": [],
+		"otherFuncList": {}
+	},
+	"componentDidMount": {
+		"ownFuncList": [],
+		"yydsFuncList": [
+			"getNodeWithPropName"
+		],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
+		"funcbody": "{\r\n    yyds.getNodeWithPropName()\r\n  }\r",
+		"level": "5",
+		"commentLines": [
+			"*\r\n   * @level 5\r\n   "
+		],
+		"params": [],
+		"otherFuncList": {}
+	},
+	"func1": {
+		"ownFuncList": [],
+		"yydsFuncList": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
+		"funcbody": "(num1, num2) => {\r\n    return num1 + num2\r\n  }\r",
+		"level": "3",
+		"commentLines": [
+			"*\r\n   * 返回两数之和(*类型， 变量名: 描述)\r\n   * @param {*number} num1 :加数\r\n   * @param {*number} num2 :被加数\r\n   * @returns 总和\r\n   * @level 3\r\n   "
+		],
+		"params": [
+			"num1",
+			"num2"
+		],
+		"otherFuncList": {}
+	},
+	"func2": {
+		"ownFuncList": [
+			"func1"
+		],
+		"yydsFuncList": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
+		"funcbody": "(num1, num2) => {\r\n    console.log(this.func1(num1, num2));\r\n    util1();\r\n  }\r",
+		"level": "3",
+		"commentLines": [
+			"*\r\n   * 输出两数之和(*类型， 变量名: 描述)\r\n   * @param {*number} num1 :加数\r\n   * @param {*number} num2 :被加数\r\n   * @level 3\r\n   "
+		],
+		"params": [
+			"num1",
+			"num2"
+		],
+		"otherFuncList": {
+			"util1": {
+				"ownFuncList": [
+					"util2",
+					"util3"
+				],
+				"yydsFuncList": [],
+				"path": "C:\\Myself\\xinDoc\\test\\util.js",
+				"funcbody": "{\r\n  util2(num, num);\r\n  utilObject.util3();\r\n  return num*num\r\n}\r",
+				"level": "5",
+				"commentLines": [
+					"*\r\n * \r\n * @param {*number} num :操作数\r\n * @returns 操作数*操作数\r\n * @level 5\r\n "
+				],
+				"params": [
+					"num"
+				],
+				"otherFuncList": {}
+			},
+			"util2": {
+				"ownFuncList": [],
+				"yydsFuncList": [],
+				"path": "C:\\Myself\\xinDoc\\test\\util.js",
+				"funcbody": "{\r\n  return num1*num2\r\n}\r",
+				"level": "5",
+				"commentLines": [
+					"*\r\n * \r\n * @param {*number} num1 :操作数1\r\n * @param {*number} num2 :操作数2\r\n * @returns 操作数1 * 操作数2\r\n * @level 5\r\n "
+				],
+				"params": [
+					"num1",
+					"num2"
+				],
+				"otherFuncList": {},
+				"bHidden": true
+			},
+			"util3": {
+				"ownFuncList": [
+					"util4",
+					"util5"
+				],
+				"yydsFuncList": [],
+				"path": "C:\\Myself\\xinDoc\\test\\util.js",
+				"funcbody": "{\r\n    this.util4()\r\n    this.util5()\r\n  },",
+				"level": "5",
+				"commentLines": [
+					"*\r\n   * @level 5\r\n   "
+				],
+				"params": [],
+				"otherFuncList": {},
+				"bHidden": true
+			}
+		}
+	},
+	"render": {
+		"ownFuncList": [],
+		"yydsFuncList": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
+		"funcbody": "{\r\n    return (\r\n      <div>Rcc</div>\r\n    )\r\n  }\r",
+		"level": 0,
+		"commentLines": [],
+		"params": [],
+		"otherFuncList": {}
+	}
+}
