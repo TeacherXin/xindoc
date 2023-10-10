@@ -21,11 +21,10 @@ export default class Rcc extends Component {
   }
 
   /**
-   * 返回两数之和(*类型， 变量名: 描述)
-   * @param {*number} num1 :加数
-   * @param {*number} num2 :被加数
-   * @returns 总和
-   * @level 3
+   * 
+   * @param {*} num1 
+   * @param {*} num2 
+   * @returns 
    */
   func1 = (num1, num2) => {
     return num1 + num2
@@ -33,8 +32,8 @@ export default class Rcc extends Component {
 
   /**
    * 输出两数之和(*类型， 变量名: 描述)
-   * @param {*number} num1 :加数
-   * @param {*number} num2 :被加数
+   * @param {number} num1 加数
+   * @param {number} num2 被加数
    * @level 3
    */
   func2 = (num1, num2) => {
@@ -43,11 +42,16 @@ export default class Rcc extends Component {
   }
 
   /**
-   * 
-   * @param {*} obj  
+   * 返回人类的相关信息
+   * @param {Object} people 人类
+   * $people @param {string} name 姓名
+   * $people @param {string} age 年龄
+   * @returns 信息
+   * @level 5
    */
-  func(obj) {
-
+  getPeopleMessage(people) {
+    const {name, age} = people;
+    return name + age
   }
 
   render() {

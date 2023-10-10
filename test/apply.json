@@ -43,9 +43,9 @@
 		"yydsFuncList": [],
 		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
 		"funcbody": "(num1, num2) => {\r\n    return num1 + num2\r\n  }\r",
-		"level": "3",
+		"level": 0,
 		"commentLines": [
-			"*\r\n   * 返回两数之和(*类型， 变量名: 描述)\r\n   * @param {*number} num1 :加数\r\n   * @param {*number} num2 :被加数\r\n   * @returns 总和\r\n   * @level 3\r\n   "
+			"*\r\n   * \r\n   * @param {*} num1 \r\n   * @param {*} num2 \r\n   * @returns \r\n   "
 		],
 		"params": [
 			"num1",
@@ -62,7 +62,7 @@
 		"funcbody": "(num1, num2) => {\r\n    console.log(this.func1(num1, num2));\r\n    util1();\r\n  }\r",
 		"level": "3",
 		"commentLines": [
-			"*\r\n   * 输出两数之和(*类型， 变量名: 描述)\r\n   * @param {*number} num1 :加数\r\n   * @param {*number} num2 :被加数\r\n   * @level 3\r\n   "
+			"*\r\n   * 输出两数之和(*类型， 变量名: 描述)\r\n   * @param {number} num1 加数\r\n   * @param {number} num2 被加数\r\n   * @level 3\r\n   "
 		],
 		"params": [
 			"num1",
@@ -167,14 +167,14 @@
 			}
 		}
 	},
-	"func": {
+	"getPeopleMessage": {
 		"ownFuncList": [],
 		"yydsFuncList": [],
 		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "{\r\n\r\n  }\r",
-		"level": 0,
+		"funcbody": "{\r\n    const {name, age} = people;\r\n    return name + age\r\n  }\r",
+		"level": "5",
 		"commentLines": [
-			"*\r\n   * \r\n   * @param {*} obj  \r\n   "
+			"*\r\n   * 返回人类的相关信息\r\n   * @param {Object} people 人类\r\n   * $people @param {string} name 姓名\r\n   * $people @param {string} age 年龄\r\n   * @returns 信息\r\n   * @level 5\r\n   "
 		],
 		"params": [],
 		"otherFuncList": {}
