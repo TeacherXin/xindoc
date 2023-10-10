@@ -1,3 +1,5 @@
+import {showString} from './string'
+
 /**
  * 
  * @param {*number} num :操作数
@@ -33,13 +35,13 @@ const utilObject = {
    * @level 5
    */
   util4: (a,b,c) => {
-
+    this.util5()
   },
   /**
    * @level 5
    */
   util5: function() {
-
+    showString([1,2,3])
   }
 }
 

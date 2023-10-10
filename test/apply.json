@@ -119,10 +119,12 @@
 				"bHidden": true
 			},
 			"util4": {
-				"ownFuncList": [],
+				"ownFuncList": [
+					"util5"
+				],
 				"yydsFuncList": [],
 				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "(a,b,c) => {\r\n\r\n  },",
+				"funcbody": "(a,b,c) => {\r\n    this.util5()\r\n  },",
 				"level": "5",
 				"commentLines": [
 					"*\r\n   * @level 5\r\n   "
@@ -139,13 +141,28 @@
 				"ownFuncList": [],
 				"yydsFuncList": [],
 				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "function() {\r\n\r\n  }\r",
+				"funcbody": "function() {\r\n    showString([1,2,3])\r\n  }\r",
 				"level": "5",
 				"commentLines": [
 					"*\r\n   * @level 5\r\n   "
 				],
 				"params": [],
-				"otherFuncList": {},
+				"otherFuncList": {
+					"showString": {
+						"ownFuncList": [],
+						"yydsFuncList": [],
+						"path": "C:\\Myself\\xinDoc\\test\\string.js",
+						"funcbody": "{\r\n  return arr.toString()\r\n}\r",
+						"level": "5",
+						"commentLines": [
+							"*\r\n * \r\n * @param {Array} arr 字符数组\r\n * @returns 数组的string格式\r\n * @level 5\r\n "
+						],
+						"params": [
+							"arr"
+						],
+						"otherFuncList": {}
+					}
+				},
 				"bHidden": true
 			}
 		}
