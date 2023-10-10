@@ -29,9 +29,15 @@ const utilObject = {
     this.util4()
     this.util5()
   },
-  util4: () => {
+  /**
+   * @level 5
+   */
+  util4: (a,b,c) => {
 
   },
+  /**
+   * @level 5
+   */
   util5: function() {
 
   }

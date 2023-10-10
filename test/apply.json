@@ -117,8 +117,50 @@
 				"params": [],
 				"otherFuncList": {},
 				"bHidden": true
+			},
+			"util4": {
+				"ownFuncList": [],
+				"yydsFuncList": [],
+				"path": "C:\\Myself\\xinDoc\\test\\util.js",
+				"funcbody": "(a,b,c) => {\r\n\r\n  },",
+				"level": "5",
+				"commentLines": [
+					"*\r\n   * @level 5\r\n   "
+				],
+				"params": [
+					"a",
+					"b",
+					"c"
+				],
+				"otherFuncList": {},
+				"bHidden": true
+			},
+			"util5": {
+				"ownFuncList": [],
+				"yydsFuncList": [],
+				"path": "C:\\Myself\\xinDoc\\test\\util.js",
+				"funcbody": "function() {\r\n\r\n  }\r",
+				"level": "5",
+				"commentLines": [
+					"*\r\n   * @level 5\r\n   "
+				],
+				"params": [],
+				"otherFuncList": {},
+				"bHidden": true
 			}
 		}
+	},
+	"func": {
+		"ownFuncList": [],
+		"yydsFuncList": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
+		"funcbody": "{\r\n\r\n  }\r",
+		"level": 0,
+		"commentLines": [
+			"*\r\n   * \r\n   * @param {*} obj  \r\n   "
+		],
+		"params": [],
+		"otherFuncList": {}
 	},
 	"render": {
 		"ownFuncList": [],

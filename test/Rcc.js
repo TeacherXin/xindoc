@@ -42,6 +42,14 @@ export default class Rcc extends Component {
     util1();
   }
 
+  /**
+   * 
+   * @param {*} obj  
+   */
+  func(obj) {
+
+  }
+
   render() {
     return (
       <div>Rcc</div>
