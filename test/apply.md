@@ -34,7 +34,7 @@ parentName: 父亲的名字
 |people|Object|人类
 |people.name|string|姓名
 |people.age|string|年龄
-|返回值|any|信息
+|返回值|string|信息
 **内部方法**: 未调用
 **公共方法**: 未调用
 **外部方法**: 未调用

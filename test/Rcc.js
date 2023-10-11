@@ -46,7 +46,7 @@ export default class Rcc extends Component {
    * @param {Object} people 人类
    * $people @param {string} name 姓名
    * $people @param {string} age 年龄
-   * @returns 信息
+   * @returns {string} 信息
    * @level 5
    */
   getPeopleMessage(people) {
