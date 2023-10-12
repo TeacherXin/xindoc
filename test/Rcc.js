@@ -43,13 +43,20 @@ export default class Rcc extends Component {
 
   /**
    * 返回人类的相关信息
+   * @author xuhxin <xuhxin@yonyou.com>
    * @param {Object} people 人类
-   * $people @param {string} name 姓名
-   * $people @param {string} age 年龄
+   * @param {string} people.name 姓名
+   * @param {string} people.age 年龄
    * @returns {string} 信息
    * @level 5
+   * @example
+   * getPeopleMessage('xuhxin','24')
+   * @throws {Error} 错误的姓名
    */
   getPeopleMessage(people) {
+    if(!people.name) {
+      throw new Error('错误的姓名')
+    }
     const {name, age} = people;
     return name + age
   }

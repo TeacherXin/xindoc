@@ -1,9 +1,6 @@
 {
 	"state": {
-		"ownFuncList": [
-			"firstName: 姓",
-			"lastName: 名"
-		],
+		"ownFuncList": [],
 		"yydsFuncList": [],
 		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
 		"funcbody": "{\r\n    //姓\r\n    firstName: '',\r\n    //名\r\n    lastName: ''\r\n  }\r",
@@ -171,10 +168,10 @@
 		"ownFuncList": [],
 		"yydsFuncList": [],
 		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "{\r\n    const {name, age} = people;\r\n    return name + age\r\n  }\r",
+		"funcbody": "{\r\n    if(!people.name) {\r\n      throw new Error('错误的姓名')\r\n    }\r\n    const {name, age} = people;\r\n    return name + age\r\n  }\r",
 		"level": "5",
 		"commentLines": [
-			"*\r\n   * 返回人类的相关信息\r\n   * @param {Object} people 人类\r\n   * $people @param {string} name 姓名\r\n   * $people @param {string} age 年龄\r\n   * @returns {string} 信息\r\n   * @level 5\r\n   "
+			"*\r\n   * 返回人类的相关信息\r\n   * @author xuhxin <xuhxin@yonyou.com>\r\n   * @param {Object} people 人类\r\n   * @param {string} people.name 姓名\r\n   * @param {string} people.age 年龄\r\n   * @returns {string} 信息\r\n   * @level 5\r\n   * @example\r\n   * getPeopleMessage('xuhxin','24')\r\n   * @throws {Error} 错误的姓名\r\n   "
 		],
 		"params": [],
 		"otherFuncList": {}
