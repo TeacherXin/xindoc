@@ -1,188 +1,135 @@
 {
-	"state": {
-		"ownFuncList": [],
-		"yydsFuncList": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "{\r\n    //姓\r\n    firstName: '',\r\n    //名\r\n    lastName: ''\r\n  }\r",
-		"level": 0,
-		"commentLines": [],
-		"params": [],
-		"otherFuncList": {}
-	},
-	"parentName": {
-		"ownFuncList": [],
-		"yydsFuncList": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "'lixiaolong'\r",
-		"level": 0,
-		"commentLines": [
-			"父亲的名字"
+	"util1": {
+		"ownFuncList": [
+			"util2",
+			"util3"
 		],
-		"params": [],
-		"otherFuncList": {}
-	},
-	"componentDidMount": {
-		"ownFuncList": [],
-		"yydsFuncList": [
-			"getNodeWithPropName"
-		],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "{\r\n    yyds.getNodeWithPropName()\r\n  }\r",
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\util.js",
+		"funcbody": "{\r\n  util2(num, num);\r\n  utilObject.util3();\r\n  return num*num\r\n}\r",
 		"level": "5",
+		"deepFlag": false,
+		"closePkFlag": false,
+		"commentLines": [
+			"*\r\n * \r\n * @param {*number} num :操作数\r\n * @returns 操作数*操作数\r\n * @level 5\r\n "
+		],
+		"params": [
+			"num"
+		],
+		"otherFuncList": {}
+	},
+	"util2": {
+		"ownFuncList": [],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\util.js",
+		"funcbody": "{\r\n  return num1*num2\r\n}\r",
+		"level": "5",
+		"deepFlag": false,
+		"closePkFlag": true,
+		"commentLines": [
+			"*\r\n * \r\n * @param {*number} num1 :操作数1\r\n * @param {*number} num2 :操作数2\r\n * @returns 操作数1 * 操作数2\r\n * @level 5\r\n "
+		],
+		"params": [
+			"num1",
+			"num2"
+		],
+		"otherFuncList": {}
+	},
+	"util3": {
+		"ownFuncList": [
+			"util4",
+			"util5"
+		],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\util.js",
+		"funcbody": "{\r\n    this.util4()\r\n    this.util5()\r\n  },",
+		"level": "5",
+		"deepFlag": false,
+		"closePkFlag": false,
 		"commentLines": [
 			"*\r\n   * @level 5\r\n   "
 		],
 		"params": [],
 		"otherFuncList": {}
 	},
-	"func1": {
-		"ownFuncList": [],
-		"yydsFuncList": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "(num1, num2) => {\r\n    return num1 + num2\r\n  }\r",
-		"level": 0,
+	"util4": {
+		"ownFuncList": [
+			"util5"
+		],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\util.js",
+		"funcbody": "(a,b,c) => {\r\n    this.util5()\r\n  },",
+		"level": "5",
+		"deepFlag": false,
+		"closePkFlag": false,
 		"commentLines": [
-			"*\r\n   * \r\n   * @param {*} num1 \r\n   * @param {*} num2 \r\n   * @returns \r\n   "
+			"*\r\n   * @level 5\r\n   "
 		],
 		"params": [
-			"num1",
-			"num2"
+			"a",
+			"b",
+			"c"
 		],
 		"otherFuncList": {}
 	},
-	"func2": {
-		"ownFuncList": [
-			"func1"
-		],
-		"yydsFuncList": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "(num1, num2) => {\r\n    console.log(this.func1(num1, num2));\r\n    util1();\r\n  }\r",
-		"level": "3",
+	"util5": {
+		"ownFuncList": [],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\util.js",
+		"funcbody": "function() {\r\n    showString([1,2,3])\r\n  }\r",
+		"level": "5",
+		"deepFlag": false,
+		"closePkFlag": false,
 		"commentLines": [
-			"*\r\n   * 输出两数之和(*类型， 变量名: 描述)\r\n   * @param {number} num1 加数\r\n   * @param {number} num2 被加数\r\n   * @level 3\r\n   "
+			"*\r\n   * @level 5\r\n   "
 		],
-		"params": [
-			"num1",
-			"num2"
-		],
+		"params": [],
 		"otherFuncList": {
-			"util1": {
-				"ownFuncList": [
-					"util2",
-					"util3"
-				],
-				"yydsFuncList": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "{\r\n  util2(num, num);\r\n  utilObject.util3();\r\n  return num*num\r\n}\r",
+			"showString": {
+				"ownFuncList": [],
+				"publicFunclist": [],
+				"path": "C:\\Myself\\xinDoc\\test\\string.js",
+				"funcbody": "{\r\n  return arr.toString()\r\n}\r",
 				"level": "5",
+				"deepFlag": false,
+				"closePkFlag": true,
 				"commentLines": [
-					"*\r\n * \r\n * @param {*number} num :操作数\r\n * @returns 操作数*操作数\r\n * @level 5\r\n "
+					"*\r\n * \r\n * @param {Array} arr 字符数组\r\n * @returns 数组的string格式\r\n * @level 5\r\n "
 				],
 				"params": [
-					"num"
+					"arr"
 				],
 				"otherFuncList": {}
-			},
-			"util2": {
-				"ownFuncList": [],
-				"yydsFuncList": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "{\r\n  return num1*num2\r\n}\r",
-				"level": "5",
-				"commentLines": [
-					"*\r\n * \r\n * @param {*number} num1 :操作数1\r\n * @param {*number} num2 :操作数2\r\n * @returns 操作数1 * 操作数2\r\n * @level 5\r\n "
-				],
-				"params": [
-					"num1",
-					"num2"
-				],
-				"otherFuncList": {},
-				"bHidden": true
-			},
-			"util3": {
-				"ownFuncList": [
-					"util4",
-					"util5"
-				],
-				"yydsFuncList": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "{\r\n    this.util4()\r\n    this.util5()\r\n  },",
-				"level": "5",
-				"commentLines": [
-					"*\r\n   * @level 5\r\n   "
-				],
-				"params": [],
-				"otherFuncList": {},
-				"bHidden": true
-			},
-			"util4": {
-				"ownFuncList": [
-					"util5"
-				],
-				"yydsFuncList": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "(a,b,c) => {\r\n    this.util5()\r\n  },",
-				"level": "5",
-				"commentLines": [
-					"*\r\n   * @level 5\r\n   "
-				],
-				"params": [
-					"a",
-					"b",
-					"c"
-				],
-				"otherFuncList": {},
-				"bHidden": true
-			},
-			"util5": {
-				"ownFuncList": [],
-				"yydsFuncList": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "function() {\r\n    showString([1,2,3])\r\n  }\r",
-				"level": "5",
-				"commentLines": [
-					"*\r\n   * @level 5\r\n   "
-				],
-				"params": [],
-				"otherFuncList": {
-					"showString": {
-						"ownFuncList": [],
-						"yydsFuncList": [],
-						"path": "C:\\Myself\\xinDoc\\test\\string.js",
-						"funcbody": "{\r\n  return arr.toString()\r\n}\r",
-						"level": "5",
-						"commentLines": [
-							"*\r\n * \r\n * @param {Array} arr 字符数组\r\n * @returns 数组的string格式\r\n * @level 5\r\n "
-						],
-						"params": [
-							"arr"
-						],
-						"otherFuncList": {}
-					}
-				},
-				"bHidden": true
 			}
 		}
 	},
-	"getPeopleMessage": {
-		"ownFuncList": [],
-		"yydsFuncList": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "{\r\n    if(!people.name) {\r\n      throw new Error('错误的姓名')\r\n    }\r\n    const {name, age} = people;\r\n    return name + age\r\n  }\r",
+	"closePkCall": {
+		"ownFuncList": [
+			"closePkCall"
+		],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\util.js",
+		"funcbody": "{\r\n  return () => {\r\n    console.log(123);\r\n    closePkCall()\r\n  }\r\n}\r",
 		"level": "5",
+		"deepFlag": true,
+		"closePkFlag": true,
 		"commentLines": [
-			"*\r\n   * 返回人类的相关信息\r\n   * @author xuhxin <xuhxin@yonyou.com>\r\n   * @param {Object} people 人类\r\n   * @param {string} people.name 姓名\r\n   * @param {string} people.age 年龄\r\n   * @returns {string} 信息\r\n   * @level 5\r\n   * @example\r\n   * getPeopleMessage('xuhxin','24')\r\n   * @throws {Error} 错误的姓名\r\n   "
+			"*\r\n * 递归 + 闭包\r\n * @returns \r\n * @level 5\r\n "
 		],
 		"params": [],
 		"otherFuncList": {}
 	},
-	"render": {
+	"closePkExpress": {
 		"ownFuncList": [],
-		"yydsFuncList": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "{\r\n    return (\r\n      <div>Rcc</div>\r\n    )\r\n  }\r",
-		"level": 0,
-		"commentLines": [],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\util.js",
+		"funcbody": "{\r\n  return function() {\r\n    console.log(123);\r\n  }\r\n}\r",
+		"level": "5",
+		"deepFlag": false,
+		"closePkFlag": true,
+		"commentLines": [
+			"*\r\n * 闭包\r\n * @returns \r\n * @level 5\r\n "
+		],
 		"params": [],
 		"otherFuncList": {}
 	}

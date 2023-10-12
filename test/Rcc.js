@@ -21,7 +21,7 @@ export default class Rcc extends Component {
   }
 
   /**
-   * 
+   * 返回两个树的和
    * @param {*} num1 
    * @param {*} num2 
    * @returns 
@@ -34,11 +34,12 @@ export default class Rcc extends Component {
    * 输出两数之和(*类型， 变量名: 描述)
    * @param {number} num1 加数
    * @param {number} num2 被加数
+   * @returns {boolean} true | false
    * @level 3
    */
   func2 = (num1, num2) => {
     console.log(this.func1(num1, num2));
-    util1();
+    return true
   }
 
   /**
@@ -59,6 +60,14 @@ export default class Rcc extends Component {
     }
     const {name, age} = people;
     return name + age
+  }
+
+  /**
+   * 空方法
+   * @level 3
+   */
+  logFunc() {
+    console.log(123);
   }
 
   render() {

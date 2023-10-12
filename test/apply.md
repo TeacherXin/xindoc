@@ -1,40 +1,71 @@
-## 组件中的state状态管理
-firstName: 姓
-lastName: 名
-## 组件中的static状态管理
-parentName: 父亲的名字
 ## 组件中的function管理
-### (3) componentDidMount
+### (1) util1
+**方法注释**：
+|参数名|参数类型|描述|
+|--|--|--|
+|num|*number|:操作数
+|返回值| 操作数*操作数|操作数*操作数
+**内部方法**: 
+ (1) util2
+ (2) util3
+**公共方法**: 未调用
+**外部方法**: 未调用
+### (2) util2
+**方法注释**：
+|参数名|参数类型|描述|
+|--|--|--|
+|num1|*number|:操作数1
+|num2|*number|:操作数2
+|返回值| 操作数1 * 操作数2|操作数1*操作数2
+**方法特性**: 闭包方法
+**内部方法**: 未调用
+**公共方法**: 未调用
+**外部方法**: 未调用
+### (3) util3
 **方法注释**：@level5
 |参数名|参数类型|描述|
 |--|--|--|
-**内部方法**: 未调用
-**公共方法**: 
- (1) getNodeWithPropName
+|无|无|无|
+**内部方法**: 
+ (1) util4
+ (2) util5
+**公共方法**: 未调用
 **外部方法**: 未调用
-### (5) func2
-**方法注释**：输出两数之和(类型，变量名:描述)
+### (4) util4
+**方法注释**：@level5
 |参数名|参数类型|描述|
 |--|--|--|
-|num1|number|加数
-|num2|number|被加数
+|无|无|无|
 **内部方法**: 
- (1) func1
+ (1) util5
+**公共方法**: 未调用
+**外部方法**: 未调用
+### (5) util5
+**方法注释**：@level5
+|参数名|参数类型|描述|
+|--|--|--|
+|无|无|无|
+**内部方法**: 未调用
 **公共方法**: 未调用
 **外部方法**: 
- (1) util1 **<C:\Myself\xinDoc\test\util.js>**
- (2) util2 **<C:\Myself\xinDoc\test\util.js>**
- (3) util3 **<C:\Myself\xinDoc\test\util.js>**
- (4) util4 **<C:\Myself\xinDoc\test\util.js>**
- (5) util5 **<C:\Myself\xinDoc\test\util.js>**
-### (6) getPeopleMessage
-**方法注释**：返回人类的相关信息
+ (1) showString **<C:\Myself\xinDoc\test\string.js>**
+### (6) closePkCall
+**方法注释**：递归+闭包
 |参数名|参数类型|描述|
 |--|--|--|
-|people|Object|人类
-|people.name|string|姓名
-|people.age|string|年龄
-|返回值|string|信息
+|无|无|无|
+**方法特性**: 递归方法
+**方法特性**: 闭包方法
+**内部方法**: 
+ (1) closePkCall
+**公共方法**: 未调用
+**外部方法**: 未调用
+### (7) closePkExpress
+**方法注释**：闭包
+|参数名|参数类型|描述|
+|--|--|--|
+|无|无|无|
+**方法特性**: 闭包方法
 **内部方法**: 未调用
 **公共方法**: 未调用
 **外部方法**: 未调用

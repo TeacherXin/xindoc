@@ -45,6 +45,30 @@ const utilObject = {
   }
 }
 
+/**
+ * 递归 + 闭包
+ * @returns 
+ * @level 5
+ */
+function closePkCall() {
+  return () => {
+    console.log(123);
+    closePkCall()
+  }
+}
+
+/**
+ * 闭包
+ * @returns 
+ * @level 5
+ */
+function closePkExpress() {
+  return function() {
+    console.log(123);
+  }
+}
+
+
 export default {
   util1,
   util2,
