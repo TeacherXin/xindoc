@@ -55,9 +55,7 @@ export default class Rcc extends Component {
    * @param {string} people.age 年龄
    * @returns {string} 信息
    * @level 5
-   * @example
-   * getPeopleMessage('xuhxin','24')
-   * @throws {Error} 错误的姓名
+   * @example getPeopleMessage('xuhxin','24')
    */
   getPeopleMessage(people) {
     if(!people.name) {

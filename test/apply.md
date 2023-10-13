@@ -43,6 +43,11 @@ parentName: 父亲的名字
 |people.name|string|姓名
 |people.age|string|年龄
 |返回值|string|信息
+**姓名邮箱**： xuhxin <xuhxin@yonyou.com>
+方法用例：
+```
+ getPeopleMessage('xuhxin','24')
+```
 **内部方法**: 未调用
 **公共方法**: 未调用
 **外部方法**: 未调用
