@@ -24,9 +24,14 @@ export default class Rcc extends Component {
    * 返回两个树的和
    * @param {*} num1 
    * @param {*} num2 
+   * @level 4
    * @returns 
    */
   func1 = (num1, num2) => {
+    this.setState({
+      firstName: num1,
+      lastName: num2
+    })
     return num1 + num2
   }
 
