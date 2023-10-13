@@ -34,23 +34,23 @@ const utilObject = {
   /**
    * @level 5
    */
-  util4: (a,b,c) => {
+  util4: async (a,b,c) => {
     this.util5()
   },
   /**
    * @level 5
    */
-  util5: function() {
+  util5: async function() {
     showString([1,2,3])
   }
 }
 
 /**
- * 递归 + 闭包
+ * 递归 + 闭包 + async
  * @returns 
  * @level 5
  */
-function closePkCall() {
+async function closePkCall() {
   return () => {
     console.log(123);
     closePkCall()
