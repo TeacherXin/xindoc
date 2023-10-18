@@ -13,19 +13,16 @@ export default class Rcc extends Component {
   //父亲的名字
   parentName = 'lixiaolong'
 
-  /**
-   * @level 5
-   */
   componentDidMount() {
     yyds.getNodeWithPropName()
   }
 
   /**
    * 返回两个树的和
-   * @param {*} num1 
-   * @param {*} num2 
+   * @param {number} num1 加数
+   * @param {number} num2 被加数
    * @level 4
-   * @returns 
+   * @returns {number} 总和
    */
   func1 = (num1, num2) => {
     this.setState({
@@ -61,6 +58,7 @@ export default class Rcc extends Component {
     if(!people.name) {
       throw new Error('错误的姓名')
     }
+    util1()
     const {name, age} = people;
     return name + age
   }
