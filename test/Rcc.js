@@ -59,7 +59,7 @@ export default class Rcc extends Component {
     if(!people.name) {
       throw new Error('错误的姓名')
     }
-    util1()
+    util1(12)
     const {name, age} = people;
     return name + age
   }

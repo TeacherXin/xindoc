@@ -34,13 +34,13 @@ const utilObject = {
   /**
    * @level 5
    */
-  util4: async (a,b,c) => {
+  util4: (a,b,c) => {
     this.util5()
   },
   /**
    * @level 5
    */
-  util5: async function() {
+  util5: () => {
     showString([1,2,3])
   }
 }
