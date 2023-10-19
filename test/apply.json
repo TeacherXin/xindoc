@@ -63,9 +63,11 @@
 		"ownFuncList": [
 			"func1"
 		],
-		"publicFunclist": [],
+		"publicFunclist": [
+			"getNodeWithPropName"
+		],
 		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "(num1, num2) => {\r\n    console.log(this.func1(num1, num2));\r\n    return true\r\n  }\r",
+		"funcbody": "(num1, num2) => {\r\n    console.log(this.func1(num1, num2));\r\n    yyds.getNodeWithPropName()\r\n    return true\r\n  }\r",
 		"level": "3",
 		"deepFlag": false,
 		"closePkFlag": false,
@@ -82,15 +84,16 @@
 		"ownFuncList": [],
 		"publicFunclist": [],
 		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "{\r\n    if(!people.name) {\r\n      throw new Error('错误的姓名')\r\n    }\r\n    util1()\r\n    const {name, age} = people;\r\n    return name + age\r\n  }\r",
+		"funcbody": "(people) => {\r\n    if(!people.name) {\r\n      throw new Error('错误的姓名')\r\n    }\r\n    util1()\r\n    const {name, age} = people;\r\n    return name + age\r\n  }\r",
 		"level": "5",
 		"deepFlag": false,
 		"closePkFlag": false,
-		"asyncFlag": false,
 		"commentLines": [
 			"*\r\n   * 返回人类的相关信息\r\n   * @author xuhxin <xuhxin@yonyou.com>\r\n   * @param {Object} people 人类\r\n   * @param {string} people.name 姓名\r\n   * @param {string} people.age 年龄\r\n   * @returns {string} 信息\r\n   * @level 5\r\n   * @example getPeopleMessage('xuhxin','24')\r\n   "
 		],
-		"params": [],
+		"params": [
+			"people"
+		],
 		"otherFuncList": {
 			"util1": {
 				"ownFuncList": [
@@ -208,19 +211,22 @@
 			}
 		}
 	},
-	"logFunc": {
-		"ownFuncList": [],
+	"fibonacci": {
+		"ownFuncList": [
+			"fibonacci"
+		],
 		"publicFunclist": [],
 		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "{\r\n    console.log(123);\r\n  }\r",
-		"level": "3",
-		"deepFlag": false,
+		"funcbody": "(n) => {\r\n    if ( n <= 1 ) {return 1};\r\n    return fibonacci(n - 1) + fibonacci(n - 2);\r\n  }\r",
+		"level": "5",
+		"deepFlag": true,
 		"closePkFlag": false,
-		"asyncFlag": false,
 		"commentLines": [
-			"*\r\n   * 空方法\r\n   * @level 3\r\n   "
+			"*\r\n   * 菲波那切数列的实现\r\n   * @param {*number} n 数字\r\n   * @returns 返回数字\r\n   * @level 5\r\n   "
 		],
-		"params": [],
+		"params": [
+			"n"
+		],
 		"otherFuncList": {}
 	},
 	"render": {

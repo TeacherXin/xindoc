@@ -41,6 +41,7 @@ export default class Rcc extends Component {
    */
   func2 = (num1, num2) => {
     console.log(this.func1(num1, num2));
+    yyds.getNodeWithPropName()
     return true
   }
 
@@ -54,7 +55,7 @@ export default class Rcc extends Component {
    * @level 5
    * @example getPeopleMessage('xuhxin','24')
    */
-  getPeopleMessage(people) {
+  getPeopleMessage = (people) => {
     if(!people.name) {
       throw new Error('错误的姓名')
     }
@@ -64,11 +65,14 @@ export default class Rcc extends Component {
   }
 
   /**
-   * 空方法
-   * @level 3
+   * 菲波那切数列的实现
+   * @param {*number} n 数字
+   * @returns 返回数字
+   * @level 5
    */
-  logFunc() {
-    console.log(123);
+  fibonacci = (n) => {
+    if ( n <= 1 ) {return 1};
+    return fibonacci(n - 1) + fibonacci(n - 2);
   }
 
   render() {
