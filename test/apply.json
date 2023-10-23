@@ -1,244 +1,106 @@
 {
-	"state": {
-		"ownFuncList": [],
-		"publicFunclist": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "() => {\r\n    //姓\r\n    firstName: '',\r\n    //名\r\n    lastName: ''\r\n  }",
-		"level": 0,
-		"deepFlag": false,
-		"closePkFlag": false,
-		"commentLines": [],
-		"params": [],
-		"otherFuncList": {}
-	},
-	"parentName": {
-		"ownFuncList": [],
-		"publicFunclist": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "() => 'lixiaolong'",
-		"level": 0,
-		"deepFlag": false,
-		"closePkFlag": false,
-		"commentLines": [
-			"父亲的名字"
+	"RFC": {
+		"ownFuncList": [
+			"getNumList",
+			"setNum"
 		],
-		"params": [],
-		"otherFuncList": {}
-	},
-	"componentDidMount": {
-		"ownFuncList": [],
-		"publicFunclist": [
-			"getNodeWithPropName"
-		],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "() => {\r\n    yyds.getNodeWithPropName()\r\n  }",
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rfc.js",
+		"funcbody": "{\r\n\r\n  // 用来计数的状态\r\n  const [num, setNum] = useState(0)\r\n  // 通过useRef定义的num\r\n  const [refNum, setRefNum] = useRef(null)\r\n\r\n  /**\r\n   * 每次组件更新都会调用\r\n   * @level 4\r\n   */\r\n  useEffect(() => {\r\n    getNumList()\r\n  })\r\n\r\n  /**\r\n   * 组件第一次更新会调用\r\n   * @level 3\r\n   */\r\n  useEffect(() => {\r\n\r\n  },[])\r\n\r\n  /**\r\n   * num更新的时候调用\r\n   * @level 3\r\n   */\r\n  useEffect(() => {\r\n\r\n  },[num])\r\n\r\n  /**\r\n   * 父组件的state更新时调用\r\n   * @level 4\r\n   */\r\n  useEffect(() => {\r\n\r\n  },[props.state])\r\n\r\n  /**\r\n   * 点击事件\r\n   * @level 3\r\n   */\r\n  const click = () => {\r\n    console.log(123);\r\n  }\r\n\r\n  /**\r\n   * 返回数字列表\r\n   * @returns {arr} 数字列表\r\n   * @level 3\r\n   */\r\n  const getNumList = () => {\r\n    setNum(22)\r\n    return [1, 2, 3]\r\n  }\r\n \r\n\r\n  return (\r\n    <div>RFC</div>\r\n  )\r\n}",
 		"level": 0,
-		"deepFlag": false,
+		"deepFlag": true,
 		"closePkFlag": false,
 		"asyncFlag": false,
 		"commentLines": [],
+		"params": [
+			"props"
+		],
+		"otherFuncList": {
+			"useState": null,
+			"useRef": null,
+			"useEffect": null
+		}
+	},
+	"useEffect - 1": {
+		"ownFuncList": [
+			"getNumList"
+		],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rfc.js",
+		"level": "4",
+		"commentLines": [
+			"*\r\n   * 每次组件更新都会调用\r\n   * @level 4\r\n   "
+		],
 		"params": [],
 		"otherFuncList": {}
 	},
-	"func1": {
-		"ownFuncList": [
-			"setState"
-		],
+	"useEffect - 2": {
+		"ownFuncList": [],
 		"publicFunclist": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "(num1, num2) => {\r\n    this.setState({\r\n      firstName: num1,\r\n      lastName: num2\r\n    })\r\n    return num1 + num2\r\n  }",
-		"level": "4",
-		"deepFlag": false,
-		"closePkFlag": false,
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rfc.js",
+		"level": "3",
 		"commentLines": [
-			"*\r\n   * 返回两个树的和\r\n   * @param {number} num1 加数\r\n   * @param {number} num2 被加数\r\n   * @level 4\r\n   * @returns {number} 总和\r\n   "
+			"*\r\n   * 组件第一次更新会调用\r\n   * @level 3\r\n   "
 		],
-		"params": [
-			"num1",
-			"num2"
-		],
-		"otherFuncList": {}
+		"params": [],
+		"otherFuncList": {},
+		"applyList": []
 	},
-	"func2": {
-		"ownFuncList": [
-			"func1"
+	"useEffect - 3": {
+		"ownFuncList": [],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rfc.js",
+		"level": "3",
+		"commentLines": [
+			"*\r\n   * num更新的时候调用\r\n   * @level 3\r\n   "
 		],
-		"publicFunclist": [
-			"getNodeWithPropName"
+		"params": [],
+		"otherFuncList": {},
+		"applyList": [
+			"num"
+		]
+	},
+	"useEffect - 4": {
+		"ownFuncList": [],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rfc.js",
+		"level": "4",
+		"commentLines": [
+			"*\r\n   * 父组件的state更新时调用\r\n   * @level 4\r\n   "
 		],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "(num1, num2) => {\r\n    console.log(this.func1(num1, num2));\r\n    yyds.getNodeWithPropName()\r\n    return true\r\n  }",
+		"params": [],
+		"otherFuncList": {},
+		"applyList": [
+			"props.state"
+		]
+	},
+	"click": {
+		"ownFuncList": [],
+		"publicFunclist": [],
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rfc.js",
+		"funcbody": "() => {\r\n    console.log(123);\r\n  }",
 		"level": "3",
 		"deepFlag": false,
 		"closePkFlag": false,
 		"commentLines": [
-			"*\r\n   * 输出两数之和(*类型， 变量名: 描述)\r\n   * @param {number} num1 加数\r\n   * @param {number} num2 被加数\r\n   * @returns {boolean} true | false\r\n   * @level 3\r\n   "
+			"*\r\n   * 点击事件\r\n   * @level 3\r\n   "
 		],
-		"params": [
-			"num1",
-			"num2"
-		],
+		"params": [],
 		"otherFuncList": {}
 	},
-	"getPeopleMessage": {
-		"ownFuncList": [],
-		"publicFunclist": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "(people) => {\r\n    if(!people.name) {\r\n      throw new Error('错误的姓名')\r\n    }\r\n    util1(12)\r\n    const {name, age} = people;\r\n    return name + age\r\n  }",
-		"level": "5",
-		"deepFlag": false,
-		"closePkFlag": false,
-		"commentLines": [
-			"*\r\n   * 返回人类的相关信息\r\n   * @author xuhxin <xuhxin@yonyou.com>\r\n   * @param {Object} people 人类\r\n   * @param {string} people.name 姓名\r\n   * @param {string} people.age 年龄\r\n   * @returns {string} 信息\r\n   * @level 5\r\n   * @example getPeopleMessage('xuhxin','24')\r\n   "
-		],
-		"params": [
-			"people"
-		],
-		"otherFuncList": {
-			"util1": {
-				"ownFuncList": [
-					"util2",
-					"util3"
-				],
-				"publicFunclist": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "(num) => {\r\n  util2(num, num);\r\n  utilObject.util3();\r\n  return num*num\r\n}",
-				"level": "5",
-				"deepFlag": false,
-				"closePkFlag": false,
-				"asyncFlag": false,
-				"commentLines": [
-					"*\r\n * \r\n * @param {*number} num :操作数\r\n * @returns 操作数*操作数\r\n * @level 5\r\n "
-				],
-				"params": [
-					"num"
-				],
-				"otherFuncList": {}
-			},
-			"util2": {
-				"ownFuncList": [],
-				"publicFunclist": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "(num1,num2) => {\r\n  return num1*num2\r\n}",
-				"level": "5",
-				"deepFlag": false,
-				"closePkFlag": true,
-				"asyncFlag": false,
-				"commentLines": [
-					"*\r\n * \r\n * @param {*number} num1 :操作数1\r\n * @param {*number} num2 :操作数2\r\n * @returns 操作数1 * 操作数2\r\n * @level 5\r\n "
-				],
-				"params": [
-					"num1",
-					"num2"
-				],
-				"otherFuncList": {},
-				"bHidden": true
-			},
-			"util3": {
-				"ownFuncList": [
-					"util4",
-					"util5"
-				],
-				"publicFunclist": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "() => {\r\n    this.util4()\r\n    this.util5()\r\n  }",
-				"level": "5",
-				"deepFlag": false,
-				"closePkFlag": false,
-				"asyncFlag": true,
-				"commentLines": [
-					"*\r\n   * @level 5\r\n   "
-				],
-				"params": [],
-				"otherFuncList": {},
-				"bHidden": true
-			},
-			"util4": {
-				"ownFuncList": [
-					"util5"
-				],
-				"publicFunclist": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "(a,b,c) => {\r\n    this.util5()\r\n  }",
-				"level": "5",
-				"deepFlag": false,
-				"closePkFlag": false,
-				"asyncFlag": false,
-				"commentLines": [
-					"*\r\n   * @level 5\r\n   "
-				],
-				"params": [
-					"a",
-					"b",
-					"c"
-				],
-				"otherFuncList": {},
-				"bHidden": true
-			},
-			"util5": {
-				"ownFuncList": [],
-				"publicFunclist": [],
-				"path": "C:\\Myself\\xinDoc\\test\\util.js",
-				"funcbody": "() => {\r\n    showString([1,2,3])\r\n  }",
-				"level": "5",
-				"deepFlag": false,
-				"closePkFlag": false,
-				"asyncFlag": false,
-				"commentLines": [
-					"*\r\n   * @level 5\r\n   "
-				],
-				"params": [],
-				"otherFuncList": {
-					"showString": {
-						"ownFuncList": [],
-						"publicFunclist": [],
-						"path": "C:\\Myself\\xinDoc\\test\\string.js",
-						"funcbody": "(arr) => {\r\n  return arr.toString()\r\n}",
-						"level": "5",
-						"deepFlag": false,
-						"closePkFlag": true,
-						"asyncFlag": false,
-						"commentLines": [
-							"*\r\n * \r\n * @param {Array} arr 字符数组\r\n * @returns 数组的string格式\r\n * @level 5\r\n "
-						],
-						"params": [
-							"arr"
-						],
-						"otherFuncList": {}
-					}
-				},
-				"bHidden": true
-			}
-		}
-	},
-	"fibonacci": {
+	"getNumList": {
 		"ownFuncList": [
-			"fibonacci"
+			"setNum"
 		],
 		"publicFunclist": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "(n) => {\r\n    if ( n <= 1 ) {return 1};\r\n    return fibonacci(n - 1) + fibonacci(n - 2);\r\n  }",
-		"level": "5",
-		"deepFlag": true,
+		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rfc.js",
+		"funcbody": "() => {\r\n    setNum(22)\r\n    return [1, 2, 3]\r\n  }",
+		"level": "3",
+		"deepFlag": false,
 		"closePkFlag": false,
 		"commentLines": [
-			"*\r\n   * 菲波那切数列的实现\r\n   * @param {*number} n 数字\r\n   * @returns 返回数字\r\n   * @level 5\r\n   "
+			"*\r\n   * 返回数字列表\r\n   * @returns {arr} 数字列表\r\n   * @level 3\r\n   "
 		],
-		"params": [
-			"n"
-		],
-		"otherFuncList": {}
-	},
-	"render": {
-		"ownFuncList": [],
-		"publicFunclist": [],
-		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rcc.js",
-		"funcbody": "() => {\r\n    return (\r\n      <div>Rcc</div>\r\n    )\r\n  }",
-		"level": 0,
-		"deepFlag": false,
-		"closePkFlag": true,
-		"asyncFlag": false,
-		"commentLines": [],
 		"params": [],
 		"otherFuncList": {}
 	}

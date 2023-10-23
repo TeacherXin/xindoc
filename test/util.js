@@ -41,7 +41,7 @@ const utilObject = {
    * @level 5
    */
   util5: () => {
-    showString([1,2,3])
+    console.log(showString([1,2,3]));
   }
 }
 
