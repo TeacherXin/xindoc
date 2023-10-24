@@ -1,6 +1,6 @@
 ## 组件中的state状态管理
 num:  用来计数的状态
-## 组件中的static状态管理
+## 组件中的ref状态管理
 refNum:  通过useRef定义的num
 ## 组件中的function管理
 ### (2) useEffect - 1
