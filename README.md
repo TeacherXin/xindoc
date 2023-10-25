@@ -1,21 +1,24 @@
 # xindoc
 
+## 文档
+<https://www.yuque.com/u29068836/hfbfsw/wa8w53ohbtk6di7t?singleDoc#MJmB6
+
 ## 安装和使用
 
 ### 方式1：
 
 安装
 ```
-npm install hxindoc
+npm install xindoc
 ```
 
 在编辑器中，复制某个文件的路径，在项目中执行
 ```
-npx hxindoc path=<文件路径>
+npx xindoc path=<文件路径>
 ```
 或者
 ```
-npx hxindoc <文件路径>
+npx xindoc <文件路径>
 ```
 
 ### 方式2：
