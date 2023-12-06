@@ -8,7 +8,7 @@
 		"path": "C:\\\\Myself\\\\xinDoc\\\\test\\\\Rfc.js",
 		"funcbody": "{\r\n\r\n  // 用来计数的状态\r\n  const [num, setNum] = useState(0)\r\n  // 通过useRef定义的num\r\n  const [refNum, setRefNum] = useRef(null)\r\n\r\n  /**\r\n   * 每次组件更新都会调用\r\n   * @level 4\r\n   */\r\n  useEffect(() => {\r\n    getNumList()\r\n  })\r\n\r\n  /**\r\n   * 组件第一次更新会调用\r\n   * @level 3\r\n   */\r\n  useEffect(() => {\r\n\r\n  },[])\r\n\r\n  /**\r\n   * num更新的时候调用\r\n   * @level 3\r\n   */\r\n  useEffect(() => {\r\n\r\n  },[num])\r\n\r\n  /**\r\n   * 父组件的state更新时调用\r\n   * @level 4\r\n   */\r\n  useEffect(() => {\r\n\r\n  },[props.state])\r\n\r\n  /**\r\n   * 点击事件\r\n   * @level 3\r\n   */\r\n  const click = () => {\r\n    console.log(123);\r\n  }\r\n\r\n  /**\r\n   * 返回数字列表\r\n   * @returns {arr} 数字列表\r\n   * @level 3\r\n   */\r\n  const getNumList = () => {\r\n    setNum(22)\r\n    return [1, 2, 3]\r\n  }\r\n \r\n\r\n  return (\r\n    <div>RFC</div>\r\n  )\r\n}",
 		"level": 0,
-		"deepFlag": true,
+		"deepFlag": false,
 		"closePkFlag": false,
 		"asyncFlag": false,
 		"commentLines": [],
@@ -82,6 +82,7 @@
 		"level": "3",
 		"deepFlag": false,
 		"closePkFlag": false,
+		"asyncFlag": false,
 		"commentLines": [
 			"*\r\n   * 点击事件\r\n   * @level 3\r\n   "
 		],
@@ -98,6 +99,7 @@
 		"level": "3",
 		"deepFlag": false,
 		"closePkFlag": false,
+		"asyncFlag": false,
 		"commentLines": [
 			"*\r\n   * 返回数字列表\r\n   * @returns {arr} 数字列表\r\n   * @level 3\r\n   "
 		],
